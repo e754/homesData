@@ -52,7 +52,7 @@ time.sleep(random.uniform(1, 1) * base_wait_time)
 # csv_path = os.path.join(script_dir, '..', 'data', 'PatriotArlington.csv')
 data = pd.read_csv('waterUsage.csv')
 
-for i in range (1792,data.shape[0]):
+for i in range (6940,10000):
     print(i)
     address=data.iloc[i]['Location']
     if i%10==0:
