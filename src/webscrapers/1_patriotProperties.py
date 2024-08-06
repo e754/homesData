@@ -23,7 +23,7 @@ import csv
 driver = webdriver.Chrome()
 
 # Navigate to the desired web page
-driver.get('https://arlington.patriotproperties.com/default.asp') #frames: top, middle, bottom
+driver.get('https://waltham.patriotproperties.com/default.asp') #frames: top, middle, bottom
 
 # Function to get HTML from a frame by its name or ID
 def get_frame_html(frame_reference):
@@ -53,7 +53,7 @@ table = driver.find_element(By.ID,"T1")
 
 
 # Initialize a CSV file to write the data
-with open('arlingtonPatriot.csv', 'w', newline='') as csvfile:
+with open('arlingtonWaltham', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
 
     # Write the header row
@@ -61,7 +61,7 @@ with open('arlingtonPatriot.csv', 'w', newline='') as csvfile:
     writer.writerow(header)
 
     # Find all rows in the table body
-    for i in range(302):
+    for i in range(319):
 
         table = driver.find_element(By.ID,"T1")
         rows = table.find_elements(By.XPATH,".//tbody//tr")
