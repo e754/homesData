@@ -1,0 +1,991 @@
+<html lang="en" tabindex="-1"><head id="ctl00_ctl00_Head1"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="https://bam.nr-data.net/1/NRBR-f7b29b0ae4f71c156ca?a=1098910670&amp;v=1216.487a282&amp;to=ZQYBYRAEChBZB0JQXlxMImYySlZMWxFFTV5fBhEbAxYUGw%3D%3D&amp;rst=1637&amp;ck=1&amp;ref=https://www.invoicecloud.com/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/customer.aspx&amp;ap=694&amp;be=1211&amp;fe=1634&amp;dc=1561&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1735930869503,%22n%22:0,%22r%22:3,%22re%22:400,%22f%22:400,%22dn%22:400,%22dne%22:400,%22c%22:400,%22ce%22:400,%22rq%22:401,%22rp%22:1195,%22rpe%22:1208,%22dl%22:1201,%22di%22:1561,%22ds%22:1561,%22de%22:1562,%22dc%22:1634,%22l%22:1634,%22le%22:1635%7D,%22navigation%22:%7B%22rc%22:5%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-spa-1216.min.js"></script><script async="" src="https://cdn.pendo.io/agent/static/656e0b9b-95be-498d-7570-b76e270d1f53/pendo.js"></script><script async="" crossorigin="anonymous" src="https://edge.fullstory.com/s/fs.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-V3BM3RZWY2&amp;l=dataLayer&amp;cx=c&amp;gtm=457e4cc1za200"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRBR-f7b29b0ae4f71c156ca","applicationID":"1098910670","transactionName":"ZQYBYRAEChBZB0JQXlxMImYySlZMWxFFTV5fBhEbAxYUGw==","queueTime":0,"applicationTime":694,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1103329699",accountID:"1499704",trustKey:"1499704",xpid:"VQIOWFFTDBABVFhaDgAHUFMB",licenseKey:"NRBR-f7b29b0ae4f71c156ca",applicationID:"1098910670"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(31),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(32),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(14),t(13),"addEventListener"in window&&t(7),c.xhrWrappable&&t(15),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){U++,L=g.hash,this[u]=y.now()}function o(){U--,g.hash!==L&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(11),b=t(12),E=t(9),R=t(7),O=t(14),T=t(8),S=t(15),P=t(10),M=t("ee"),C=M.get("tracer"),N=t(23);t(17),y.features.spa=!0;var L,U=0;M.on(u,r),b.on(p,r),P.on(p,r),M.on(d,o),b.on(l,o),P.on(l,o),M.buffer([u,d,"xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),S.buffer([u,"new-xhr","send-xhr"+s]),T.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,m+s),a(T,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,N(!0)),w[v]("load",i,N(!0)),w[v]("popstate",function(){i(0,U>1)},N(!0))}},{}],5:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function o(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+p])try{window.performance[h](m,o,!1)}catch(t){}else try{window.performance[h]("webkit"+m,o,!1)}catch(t){}}function i(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(14),f=t(13),u=t(6),d=t(23),p="learResourceTimings",l="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",O=t("loader");if(!O.disabled){O.features.stn=!0,t(9),"addEventListener"in window&&t(7);var T=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof T&&(this.bstStart=O.now())}),a.on(b,function(t,e){var n=t[0];n instanceof T&&s("bst",[n,e,this.bstStart,O.now()])}),c.on(x,function(t,e,n){this.bstStart=O.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),this.bstType])}),f.on(x,function(){this.bstStart=O.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=O.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):l in window.performance&&(window.performance["c"+p]?window.performance[l](m,o,d(!1)):window.performance[l]("webkit"+m,o,d(!1))),document[l]("scroll",i,d(!1)),document[l]("keypress",i,d(!1)),document[l]("click",i,d(!1))}}},{}],6:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],7:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],8:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(32),a=t(31);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],9:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],10:[function(t,e,n){function r(t){function e(){f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}function n(){f.emit("jsonp-error",[],l),f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var d=s(a),p="function"==typeof d.parent[d.key];if(p){var l={};u.inPlace(d.parent,[d.key],"cb-",l),t.addEventListener("load",e,c(!1)),t.addEventListener("error",n,c(!1)),f.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(d);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(p);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t(23),f=t("ee").get("jsonp"),u=t("wrap-function")(f);if(e.exports=f,o()){var d=/[?&](?:callback|cb)=([^&#]+)/,p=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?u.inPlace(Node.prototype,h,"dom-"):(u.inPlace(HTMLElement.prototype,h,"dom-"),u.inPlace(HTMLHeadElement.prototype,h,"dom-"),u.inPlace(HTMLBodyElement.prototype,h,"dom-")),f.on("dom-start",function(t){r(t[0])})}},{}],11:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],12:[function(t,e,n){function r(t){var e=i.context(),n=s(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,s=o(i),c=t(31),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),s=f.resolve(a);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=s(n[0],"cb-",r,null,!1),n[1]=s(n[1],"cb-",r,null,!1);var c=t.apply(this,n);return r.nextPromise=c,i.emit("propagate",[e,!0],c,!1,!1),c}}),i.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this,null,!1),t[1]=s(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],13:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],14:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],15:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,O.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(7);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=t(23),l=NREUM.o,h=l.XHR,m=l.MO,v=l.PR,w=l.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,p(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,O=document.createTextNode(R);new m(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],16:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",s=1,c="",f="";return o+"@nr="+i+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(28),h=t(18);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],17:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function o(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(18),f=t(16).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(24),m=t(22),v=t(19),w=t(23),g=t(25).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(15),t(8),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;if("string"==typeof i?n=i:"object"==typeof i&&i instanceof y?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),o(this,n),"data"!==this.params.protocol){var s=(""+(i&&i instanceof y&&i.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],18:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],19:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(22);e.exports=r},{}],20:[function(t,e,n){function r(){}function o(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),i(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var i=t("handle"),a=t(31),s=t(32),c=t("ee").get("tracer"),f=t("loader"),u=t(25),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",h=l+"ixn-";a(p,function(t,e){d[e]=o(l,e,!0,"api")}),d.addPageAction=o(l,"addPageAction",!0),d.setCurrentRouteName=o(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=o(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),i("err",[t,f.now(),!1,e])}},{}],21:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],22:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],23:[function(t,e,n){var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(i){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],24:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return i("storeMetric",n,null,"api"),n}function o(t,e){var n=[s,t,{name:t},e];return i("storeEventMetrics",n,null,"api"),n}var i=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:o}},{}],26:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,s=t(33);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],27:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var o=[r],i=a({});i&&o.push(i),l("lcp",o)}}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,l("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),l("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,p,l=t("handle"),h=t("loader"),m=t(30),v=t(23),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(o);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}p=new PerformanceObserver(i);try{p.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],28:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(t)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],29:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],30:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[i]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,o(!1))}var o=t(23);e.exports=r;var i,a,s;"undefined"!=typeof document.hidden?(i="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],31:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],32:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],33:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var s=e(o),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var p=d[y[n]];return p&&p.push([x,n,r,s]),s}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){l.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function i(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",f=t("gos"),u=t(31),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(26),s=t("handle"),c=t(31),f=t("ee"),u=t(29),d=t(21),p=t(23),l=d.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!1;NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1216.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(20),t(27),m[v]?(m[v]("DOMContentLoaded",i,p(!1)),h[v]("load",r,p(!1))):(m[w]("onreadystatechange",o),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var i,a,u,p;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,c],u],t)}s(n+"start",[i,a,c],u,f);try{return p=e.apply(a,i)}catch(h){throw s(n+"err",[i,a,h],u,f),h}finally{s(n+"end",[i,a,p],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,o,c,i))}function s(n,r,i,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,i,e,a)}catch(c){o([c,n,r,i],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function s(t,e){var n=e(t);return n[p]=t,i(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(32),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,17,5,3,4]);</script><meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0"><meta name="google" content="nopagereadaloud"><title>
+	Your Invoice | City of Waltham, MA
+</title><!--[if gte IE 9]><!-->
+<script src="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/Resources/js/jquery-3.6.3.min.js" type="text/javascript"></script>
+<!--<![endif]-->
+<script src="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/resources/js/bootstrap-3.4.1.min.js" type="text/javascript"></script><link href="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/resources/plugins/fonts/googleFonts.css" rel="Stylesheet" type="text/css"><link href="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/resources/plugins/bootstrap/bootstrap.min.css" rel="Stylesheet" type="text/css"><link href="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/resources/plugins/datepicker/datepicker.min.css" rel="Stylesheet" type="text/css"><!--[if lt IE 9]>
+<script src="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/Resources/js/html5shiv.min.js" type="text/javascript"></script>
+<script src="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/Resources/js/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/Resources/js/unsupported-browser.js" id="guid" value="4fa8c138-87ea-407a-b48c-d23923de9394" type="text/javascript"></script>
+<![endif]-->
+
+
+    
+    <link href="resources/css/ic-checkboxes.css" rel="stylesheet" type="text/css">
+    <script src="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/resources/js/ic-iframe-listener.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            SendPageNameToListener('Customer');
+        })
+    </script>
+    <style type="text/css">
+
+        /*new*/
+
+        .navbar-default { background-color:inherit; border-color:transparent; }
+
+        .invoice-not-available-panel {
+            /* background-color: #fff7db; */
+            /* padding: 20px; */
+            /* text-align: center; */
+            font-weight: bold;
+            /* font-size: 17px; */
+            color: #d62c21;
+        }
+
+        .invoice-thank-you-payment {
+            font-weight: bold;
+                color: green;
+        }
+
+        .invoice-balance-forwarded {
+            font-weight: bold;
+            /* font-size: 17px; */
+            color: #d62c21;
+        }
+
+        .invoice-payments-blocked {
+            font-weight: bold;
+            /* font-size: 17px; */
+            color: #d62c21;
+        }
+
+         .btn-group-vertical > .btn {
+            border-radius: 4px !important;
+        }
+
+        .PayWithCashInfo {
+            display:block;
+            position:relative;
+            text-align:center;
+            padding-top:5px;
+            color:#666 !important;
+            font-weight:normal !important;
+            text-decoration:underline;
+            text-decoration-style:dotted;
+            font-size:12px;
+        }
+        
+        @media (max-width: 767px) {
+            #ic-menu {
+                margin-left: -280px;
+                margin-right: -10px;
+            }
+            .ic-sign-in-link {
+                 border-bottom: solid 2px #ffffff !important; 
+            }
+        }
+
+         .PayWithCashInfo:focus {
+            outline:none;
+        }
+
+        .btn-pnm {
+            background-color:#8bc347;
+            color:#ffffff !important;
+            border-color:#7d7d7d !important;
+        }
+
+        .btn-pnm:hover, .btn-pnm:active, .btn-pnm:focus {
+            background-color:#6aaf16 !important;
+        }
+
+         @media (max-width: 767px)  
+        {
+            .btn-group-vertical {
+                width:100%;
+            }
+
+        }
+
+         @media (max-width: 1199px) and (min-width: 767px) {
+             .marginFix {
+                 margin-right:10px;
+             }
+         } 
+
+
+    </style>
+    
+
+    <script type="text/javascript">
+       
+
+        $(document).ready(function () {
+
+             
+             $('.PayWithCashInfo').popover({
+
+            trigger: 'manual',
+            html: true,
+            placement: 'bottom',
+            title: '',
+            container: "body",
+            //content: function () {
+            //    return $('#popover_content_wrapper').html();
+            //},
+            content: '',
+            animation: false
+        })
+        .on("mouseenter", function () {
+            var _this = this;
+            $(this).popover("show");
+            $(".popover").on("mouseleave", function () {
+                $(_this).popover('hide');
+            });
+        }).on("mouseleave", function () {
+            var _this = this;
+            setTimeout(function () {
+                if (!$(".popover:hover").length) {
+                    $(_this).popover("hide");
+                }
+            }, 300);
+        });
+      
+        //When popover is inserted into DOM
+        //Set Popover Position
+        $('.PaywithCashInfo').on('inserted.bs.popover', function (e) {
+            var $link = $(this)
+
+            var poId = $link.attr('aria-describedby');
+            var $po = $('#' + poId);
+
+            $po.find('.popover-content').attr('style', 'max-width:450px;min-width:200px;')
+
+        });
+
+
+        })
+    </script>
+
+
+
+
+    <style type="text/css">
+        #right-column { background-color: inherit !important; }
+
+        #content-exTable {min-height: 500px;}
+
+        @media(max-width:767px) {
+            #content-extTable {
+                min-height:initial;
+            }
+        }
+
+
+    </style>
+
+
+
+        <style type="text/css">
+            .skip-nav-link {
+                height: 1px;
+                left: 0.5rem;
+                overflow: hidden;
+                position: absolute;
+                top: auto;
+                transform: translateY(-120%);
+                transition: transform 100ms ease-in;
+                width: 1px;
+                z-index: -999;
+            }
+
+            a.skip-nav-link:focus, a.skip-nav-link:active {
+                background-color: #83ac52;
+                border-radius: 8px;
+                color: #fff;
+                font-weight: 700;
+                height: auto;
+                left: auto;
+                margin-top: 10px;
+                overflow: auto;
+                padding: 10px 20px;
+                text-align: center;
+                top: auto;
+                transform: translateY(0);
+                width: auto;
+                z-index: 999;
+            }
+
+            .container {
+                display: none;
+            }
+
+            .biller-dba {
+                float: left;
+                font-size: 23px;
+                font-weight: bold;
+                line-height: 46px;
+            }
+
+            .contact-us-email-address {
+                background-color: #8492a2;
+                border-radius: 30px;
+                color: #fff;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                padding: 5px;
+                text-align: center;
+            }
+
+            .contact-us-email-address:hover {
+                background-color: #2576d2;
+            }
+
+            .contact-us-email-icon {
+                font-size: 20px;
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            .contact-us-phone-number {
+                border-bottom: solid 1px #f1f1f1;
+                font-size: 16px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            .contact-us-phone-icon {
+                font-size: 20px;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            .add-left-pad {
+                padding-left: 265px;
+            }
+
+            @media (min-width: 768px) {
+                .navbar-right {
+                    margin-right: 255px
+                }
+            }
+            @media (max-width: 767px) {
+                #ic-menu-small {
+                    margin-left: -280px;
+                    margin-right: -10px;
+                }
+
+                .navbar-toggle {
+                    margin-right: 2px !important;
+                }
+            }
+        </style>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.container').show();
+            });
+        </script>
+
+    <link href="CustomerStyle.ashx?G=4fa8c138-87ea-407a-b48c-d23923de9394" rel="Stylesheet" type="text/css"><link href="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/resources/css/ic-main-style.css" rel="Stylesheet" type="text/css"></head>
+
+    <body>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-135118436-3"></script> <script> window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-135118436-3', { cookie_flags: 'SameSite=None;Secure'}); gtag('event','virtual_site_referer',{'event_category': 'virtualsite','event_label': 'https%3A%2F%2Fweb-server.city.waltham.ma.us%2F'});</script>
+        <script>window['_fs_debug'] = false;window['_fs_host'] = 'fullstory.com';window['_fs_script'] = 'edge.fullstory.com/s/fs.js';window['_fs_org'] = 'PATPJ';window['_fs_namespace'] = 'FS';(function(m,n,e,t,l,o,g,y){if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};g.anonymize=function(){g.identify(!!0)};g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};g.log = function(a,b){g("log",[a,b])};g.consent=function(a){g("consent",!arguments.length||a)};g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};g.clearUserCookie=function(){};g.setVars=function(n, p){g('setVars',[n,p]);};g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};g._v="1.3.0";})(window,document,window['_fs_namespace'],'script','user');</script>
+        <script src="resources/js/ga-util.min.js"></script>
+
+        <div style="border-bottom: solid 1px #eee;">
+            <div id="header-container" class="container" style="padding-right: 15px; padding-left: 15px; display: block;">
+                <a class="skip-nav-link" href="#left-column">Skip to main content</a>
+                <a id="ctl00_ctl00_lnkBillerURL" href="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/Site.aspx?g=69d3b8cd-51c1-4829-97b7-31777e2a817d" style="float:left;"><img id="ctl00_ctl00_imgTopLeft" src="https://icblobstorage.blob.core.windows.net/ic-resources/f40b657a-9d70-4d2e-b5ee-ead5d83a64de.png" alt="City of Waltham, MA" style="border-width:0px;float:left;padding-top:15px;"></a>
+       
+                
+      
+                <div style="text-align: left;" class="add-left-pad">
+                    
+    
+    
+        <div class="hidden-xs">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ic-menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="ic-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            
+
+                            <li>
+                                <a id="ctl00_ctl00_cphTopRight_cphTopRightContactUs_lnkContactUs" href="ContactUs.aspx?bg=4fa8c138-87ea-407a-b48c-d23923de9394">Contact Us</a>
+                            </li>                            
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div id="ctl00_ctl00_cphTopRight_cphTopRightContactUs_pnlNoNavBarCph">
+	
+            <div class="visible-xs">
+                <br>
+                <br>
+            </div>
+        
+</div>
+    
+
+    
+    
+
+    
+
+                </div>                
+        
+                
+                    <div id="mobile-quick-link-container" class="visible-xs visible-sm">
+                        
+
+    <div class="mobile-quick-link-table">
+        <div class="mobile-quick-link-row">
+            
+            
+                <div class="mobile-quick-link-cell">
+                    <a href="#" data-toggle="modal" data-target="#contactModal"><span class="glyphicon glyphicon-question-sign"></span>
+                    <br>Help </a>
+                </div>
+                        
+        </div>
+    </div>
+
+    
+
+                    </div>
+                
+             </div>
+        </div>
+        
+        <div class="container" style="display: block;">
+            
+
+    <script src="resources/js/ic-pendo-payer-util.min.js"></script>
+
+    <form name="aspnetForm" method="post" action="./customer.aspx?cl=1&amp;bg=4FA8C138-87EA-407A-B48C-D23923DE9394&amp;InvoiceGUID=ccbc5f4c-6287-4cf0-8c31-fb0ed4ed0fe8" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script type="text/javascript">
+function invoiceSummary(width, height, url, pageTitle)
+{
+ShowRadWindow(width, height, url, pageTitle, Callback_invoiceSummary);
+}
+
+function Callback_invoiceSummary(sender, eventArgs)
+{
+var value = eventArgs.get_argument();
+sender.remove_close(Callback_invoiceSummary);
+if (value) {
+// no action
+}
+return false;
+}
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6EF44762">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="paekbcsu7Pwy/djJ3LdTI2ntkLFwTcoaDauSQrXlYIWLdPmBXsCUN3u4FN87cvliqp0pTq23R0eQ3+jy6M5pmiOv/bjXcdIS3CKu3Ht4N7lovReSYQNu3H9oinO2nv0fRjirCc1qDsKOyJnTSEICEoVEungg0v3Un2JbCcsWvgsaSPMkQScXuRH6pVKAWvtjOsREYzJll9ILKLuGEKLp7dpFLL4C9vZmkn2uctRs5tsP16Pj">
+</div>
+        
+        <table cellpadding="0" cellspacing="0" width="100%" id="content-exTable">
+            <tbody><tr>
+                <td id="left-column" class="col-xs-12 col-md-9">
+
+                    
+
+    <h1 class="title sso-title">Your Invoice</h1>
+    <div class="title-sub-text sso-title-sub-text">
+        
+            <div class="hidden-xs">
+                Click on Proceed to Payment when you are ready to pay.
+            </div>
+
+            <div class="visible-xs">
+                Click on Proceed to Payment when you are ready to pay.
+            </div>
+            
+            
+        
+        
+    </div>
+
+    <span id="ctl00_ctl00_cphBody_cphBodyLeft_lblCustomerText"></span>
+
+    
+
+
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        function Close() {
+
+            $('#myModal').modal('hide');
+
+        }
+    </script>
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal" aria-labelledby="rtdrModalLabel" aria-describedby="modalDesc">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="glyphicon glyphicon-info-sign" style="font-size:23px;color:#f9a63c;float:left;"></span>
+                    <h4 class="modal-title" id="rtdrModalLabel" style="float:left;margin-top:1px;">&nbsp;&nbsp;Please Read</h4>
+                </div>
+                <div class="modal-body">
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <br>
+
+    
+                    
+    
+
+<style type="text/css">
+    .item-first {
+        font-size:14px;
+        font-weight:bold;
+    }
+    .item-rest {
+        color:#3083ca;
+    }
+    .invoice-group-row {
+        border: solid 1px #f1f1f1;
+    }
+    .invoice-group-table {
+        border: solid 1px #f1f1f1;
+    }
+    .invoice-group-table th {
+        padding-left: 7px;
+    }
+    .invoice-group-table td {
+        border: solid 1px #f1f1f1;
+        padding-left: 7px;
+    }
+    .invoice-group-parent-row {
+        background-color:#f1f1f1;
+    }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        // hide all group details
+        $('.invoice-group-row').hide();
+    });
+
+    function ToggleGroupDetail(groupGuid) {
+
+        var itemRow = $('.invoice-group-detail-' + groupGuid)
+        var parentRow = itemRow.prev();
+
+        itemRow.toggle();
+
+        // if expanded, highlight parent
+        if (itemRow.is(":hidden")) {
+            // hidden
+            parentRow.removeClass('invoice-group-parent-row');
+        }
+        else {
+            // expanded
+            parentRow.addClass('invoice-group-parent-row ');
+        }
+    }
+</script>
+
+<div>
+    
+            
+                
+                <span id="ctl00_ctl00_cphBody_cphBodyLeft_ctl01_outerRepeater_ctl01_Repeater1_ctl00_repeater1Title" style="font-weight: bold; font-size: 16px;">Type - Utility</span>
+
+                <div class="ic-table-mobile sso-ic-table-mobile">
+             
+                    <table class="table ic-table sso-ic-table" style="font-size:12px;">
+                        <thead>
+                            <tr>
+                                <th class="invoiceHeader hidden-xs">Type</th><th class="invoiceHeader hidden-xs">Account #</th><th class="invoiceHeader hidden-xs">Invoice #</th><th class="invoiceHeader hidden-xs">Due Date</th><th class="invoiceHeader hidden-xs">Balance Due</th><th class="invoiceHeader hidden-xs hidden-sm hidden-md hidden-lg">Type</th><th class="invoiceHeader hidden-xs hidden-sm hidden-md hidden-lg">Due Date</th><th class="invoiceHeader hidden-xs hidden-sm hidden-md hidden-lg">Balance</th><th class="invoiceHeader visible-xs">Items</th><th class="invoiceHeader" width="100" style="text-align:center;">Options</th>
+                            </tr>  
+                        </thead>            
+        
+                
+              
+                        <tbody><tr>
+                            
+	                        <td class="invoiceDetail hidden-xs">Utility</td><td class="invoiceDetail hidden-xs">3924001</td><td class="invoiceDetail hidden-xs">UB4942517.6390</td><td class="invoiceDetail hidden-xs">1/13/2025</td><td class="invoiceDetail hidden-xs">$136.48</td><td class="invoiceDetail hidden-sm hidden-xs hidden-md hidden-lg">Utility</td><td class="invoiceDetail hidden-sm hidden-xs hidden-md hidden-lg">1/13/2025</td><td class="invoiceDetail hidden-sm hidden-xs hidden-md hidden-lg">$136.48</td><td class="invoiceDetail hidden-sm hidden-md hidden-lg"><div class="ic-table-mobile-value-first">Utility</div>
+<div class="ic-table-mobile-value">Due on 1/13/2025</div>
+<div class="ic-table-mobile-value">Balance Due $136.48</div>
+</td>
+
+                            <td id="ctl00_ctl00_cphBody_cphBodyLeft_ctl01_outerRepeater_ctl01_Repeater1_ctl01_tdOptions" style="text-align:left;white-space:nowrap;" class="invoiceDetail">
+
+                                <div>
+		                            
+		                        </div>
+                        
+                                <div>
+                                    <a id="ctl00_ctl00_cphBody_cphBodyLeft_ctl01_outerRepeater_ctl01_Repeater1_ctl01_lnkInvoicePDF" title="View Invoice" class="item-first sso-item-first" alt="Download in PDF format" href="https://www.invoicecloud.com/portal/pdf.aspx?InvoiceGUID=ccbc5f4c-6287-4cf0-8c31-fb0ed4ed0fe8&amp;BillerGUID=4fa8c138-87ea-407a-b48c-d23923de9394&amp;LCT=uvIvib7tiHCzzuJUQmCl08nBZxiOX0AfEC8uSbHesFQ%3d&amp;pdf=1" target="_blank"><span class="glyphicon glyphicon-new-window"></span> View Invoice</a>
+		                        </div>
+
+                                <div>
+                                    
+                                </div>
+
+                                <div>
+                                    
+                                </div>
+
+                                
+                        
+                                <div>
+    		                        
+                                </div>
+
+                                <div>
+                                    
+                                </div>
+
+                                <div>
+                                    
+                                </div>
+
+                                <br>
+                            </td>
+
+                        </tr>
+          
+                        
+                
+                
+        
+                    </tbody></table>
+
+                
+
+                    </div> <!-- end container -->
+                
+        
+            <!-- subtotal goes here -->
+            <div style="float:right">
+
+                        <table cellpadding="0" cellspacing="0">
+                            <tbody><tr>
+                                <td valign="top" style="text-align:right; font-size:16px;">
+                                    
+                                            <div style="font-weight:bold;">
+                                                
+                                                    &nbsp; Subtotal (1 Items) &nbsp; &nbsp;$136.48
+                                            </div>
+                                            <div style="font-size:12px; text-align:right; font-style:italic;">Not including any applicable service fees.</div>
+                                        
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+        
+
+    
+    
+</div> <!-- end first div -->
+
+ 
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+    
+
+    <br>
+
+    
+
+    
+
+    <div style="text-align:right;">
+        <div class="center-on-xs">
+
+            <div id="ctl00_ctl00_cphBody_cphBodyLeft_pnlExpressPay">
+	
+                <p class="hidden-xs">
+                    <a onclick="$(this).attr('disabled','disabled');" id="ctl00_ctl00_cphBody_cphBodyLeft_btnPayNow" class="btn btn-primary ic-button sso-ic-button" usesubmitbehavior="false" href="javascript:__doPostBack('ctl00$ctl00$cphBody$cphBodyLeft$btnPayNow','')">Proceed to Payment&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </p>
+                <p class="visible-xs">
+                    <a onclick="$(this).attr('disabled','disabled');" id="ctl00_ctl00_cphBody_cphBodyLeft_btnPayNow2" class="btn btn-primary ic-button sso-ic-button" usesubmitbehavior="false" href="javascript:__doPostBack('ctl00$ctl00$cphBody$cphBodyLeft$btnPayNow2','')">Proceed to Payment&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </p>
+            
+</div>
+
+            
+                        
+            <div id="ctl00_ctl00_cphBody_cphBodyLeft_pnlRegister">
+	
+                <br>
+                <div class="hidden-xs hidden-sm">
+                    <div style="font-size:16px;text-align:right;display:inline-block;padding-bottom:5px;border-bottom:solid 1px #e1e1e1;width:30%;font-weight:bold;">
+                        Additional Options
+                    </div>
+                </div>
+
+                <div class="hidden-xs">
+                    <br>
+                </div>
+   
+                <p class="hidden-xs">
+                    <a id="ctl00_ctl00_cphBody_cphBodyLeft_btnRegisterToPayOnline" class="ic-button-link sso-ic-button-link" href="CustomerRegistration.aspx?iti=46&amp;bg=4fa8c138-87ea-407a-b48c-d23923de9394&amp;cg=b9b05b75-4710-4f72-a1a6-ad0fcaa61147&amp;i=ccbc5f4c-6287-4cf0-8c31-fb0ed4ed0fe8"><span class="glyphicon glyphicon-user"></span>&nbsp;I want to Register this Account</a>
+                </p>
+                <p class="visible-xs">
+                    <a id="ctl00_ctl00_cphBody_cphBodyLeft_btnRegisterToPayOnline2" class="btn btn-default ic-button sso-ic-button" href="CustomerRegistration.aspx?iti=46&amp;bg=4fa8c138-87ea-407a-b48c-d23923de9394&amp;cg=b9b05b75-4710-4f72-a1a6-ad0fcaa61147&amp;i=ccbc5f4c-6287-4cf0-8c31-fb0ed4ed0fe8">Register</a>
+                </p>
+            
+</div>
+
+        </div>
+    </div>                       
+                        
+    <script type="text/javascript">
+        function triggerPayWithCashClick() {
+            //Triggers Pay With Cash Click Event            
+            $(".pnmLink")[0].click();
+        }
+    </script>
+
+    
+
+<style type="text/css">
+
+    @media screen and (max-width: 700px) {
+        #lower {
+            visibility: hidden;
+        }
+    }
+        
+    #lower {
+
+       
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+       
+    }
+    #panel {
+       
+        display: none;
+        padding: 10px 36px 10px 36px;
+        margin:auto;
+        width: 100%;
+        background-color:#fcf8e3;
+        border:solid 1px #faebcc;
+        color:#8a6d3b;
+        font-size:16px;
+    }
+    #panel-dismiss
+    {
+        background-color:#8a6d3b;
+        color:#fff;
+        margin:auto;
+        text-align:center;
+        width:150px;
+        padding:10px;
+    }
+    #panel-dismiss a
+    {
+        color:#fff;
+    }
+
+    .modal {
+        text-align: center;
+        padding: 0!important;
+    }
+
+    .modal:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .modal-close{
+        position: absolute;
+        margin: 0;
+        top: 14px; /* half height of "X" image, just for nice placing*/
+        left: 16px; /* half width of "X" image, just for nice placing*/
+        opacity: 0.9;
+    }
+    .modal-footer {
+        text-align: left;
+    }
+
+</style>
+
+<script type="text/javascript">
+
+    $(function () {
+        
+            //setTimeout(showInfoPanel, 500);
+        
+    });
+
+    function showInfoPanel() {
+        $("#panel").slideToggle("slow");
+    }
+
+    
+
+    //Modal TLS < 1.1
+
+    //$(function () {
+    //    try {
+    //        var xhr = new XMLHttpRequest();
+    //        xhr.open('GET', 'https://tls1.invoicecloud.com/api/v1/info/tls-check');
+    //        xhr.setRequestHeader('cache-control', 'no-cache');
+    //        xhr.addEventListener('readystatechange', function () {
+    //            //console.log(xhr.status)
+    //            if (this.readyState == 4 && xhr.status != 200) {
+    //                $(function () {
+    //                    $("#lower").css('display', 'none')
+    //                    $('.myModal').modal('show');
+    //                });
+
+    //            }
+    //        });
+    //        $('.myModal').on("click", function () {
+    //            $(this).modal('toggle')
+    //        });
+
+    //        xhr.send();
+    //    }
+    //    catch (err) {
+
+    //    }
+    //});
+
+    
+
+    
+
+</script>
+
+
+<div class="modal myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-describedby="myModalDesc">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="myModalLabel">Please Note</h3> 
+            </div>
+            <div class="modal-body">
+                <p id="myModalDesc">If you are having trouble accessing the payment portal, this may be due to the browser you are using and your computer’s operating system. To maintain compliance with security standards, our payment provider (Invoice Cloud) no longer supports the Internet Explorer browser when running on Windows XP, Server 2003, and Vista operating systems. We strongly encourage you to choose a different web browser (Chrome or Firefox) or upgrade your computer’s operating system to the latest Windows version.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger mr-auto">Close</button>
+            </div>
+            </div>
+    </div>
+</div>
+
+<div id="lower">
+
+    <div id="panel">
+        <p>
+            <b>Important:</b> To ensure compliance with the latest security standards, Invoice Cloud will disable access for Internet browsers which do not support Transport Layer Security (TLS) versions 1.1 and 1.2 beginning April 4, 2018. To continue using online payments, customers must access the service with a compatible browser after that date. If your operating system is Windows XP or Vista, the Internet Explorer browser is no longer compatible with TLS 1.1 or 1.2. Both Firefox and Chrome are compatible browsers.
+        </p>
+        <div style="width:100%;">
+            <div id="panel-dismiss"><a href="#" onclick="showInfoPanel();">Dismiss</a></div>
+        </div>
+    </div>  
+
+</div>
+
+
+
+                </td>
+                <td id="right-column" class="col-md-3 hidden-xs hidden-sm">
+
+                    
+
+                    
+    <div style="margin-top: 0px;" id="need_help_popover_content_wrapper" class="popover_content_wrapper">
+        
+        <div style="margin-bottom: 16px">
+            <span aria-hidden="true" class="glyphicon glyphicon-question-sign" style="color: #f9a63c; font-size: 20px; padding-right: 4px;"></span> 
+            <h2 style="font-size: 16px; font-weight: bold; display: inline;">Need Help?</h2>
+        </div>
+
+        <div id="ctl00_ctl00_cphBody_ctrlNeedHelpSide1_pnlContactInfo">
+	
+            
+                    <p>You may reach us at <span id="ctl00_ctl00_cphBody_ctrlNeedHelpSide1_lblPhoneNumber">(781) 314-3250</span>.</p>
+                    
+                            <p>You may email your questions to <a class="inline-link" href="mailto:momalley@city.waltham.ma.us"><span id="ctl00_ctl00_cphBody_ctrlNeedHelpSide1_lblEmailAddress">momalley@city.waltham.ma.us</span></a>.</p>
+                            
+                            <a href="mailto:momalley@city.waltham.ma.us" class="email-us-side-button" style="margin-top: 10px;"><span aria-hidden="true" class="glyphicon glyphicon-envelope" style="margin-right: 8px;"></span>Email Us</a>
+                    
+</div>
+
+    </div>
+
+
+
+
+                    
+
+
+                </td>
+            </tr>
+        </tbody></table>
+
+    
+    
+    </form>
+
+     
+
+<div class="ic-footer">
+    <span>
+        <svg aria-labeledby="footerLogo" xmlns="http://www.w3.org/2000/svg" width="169" height="24" viewBox="0 0 169 24" fill="none">
+            <title id="footerLogo">Invoice Cloud logo</title>
+            <path d="M32.3345 5.40044H36.2041V20.5897H32.3345V5.40044ZM38.3898 9.202H41.6216V10.4097C42.37 9.29555 43.28 8.8193 44.7172 8.8193C45.9249 8.8193 47.039 9.22752 47.7874 9.95891C48.6549 10.8009 48.927 11.6683 48.927 13.4628V20.5897H45.5082V14.3728C45.5082 12.7314 44.9639 12.0085 43.7307 12.0085C42.4975 12.0085 41.7917 12.7654 41.7917 14.2367V20.5897H38.3728V9.202H38.3898ZM56.9043 20.5897H53.6471L49.5479 9.202H53.0773L55.2629 16.3033L57.4741 9.202H61.0036L56.9043 20.5897ZM73.1737 14.8916C73.1737 18.3785 70.5542 20.9724 67.0503 20.9724C63.5464 20.9724 60.876 18.4465 60.876 14.8916C60.876 11.3367 63.5209 8.81079 67.0503 8.81079C70.5797 8.81079 73.1737 11.4047 73.1737 14.8916ZM64.2948 14.8746C64.2948 16.5585 65.477 17.7917 67.0758 17.7917C68.6747 17.7917 69.7633 16.516 69.7633 14.8746C69.7633 13.2332 68.5556 12 67.0758 12C65.5025 12 64.2948 13.2502 64.2948 14.8746ZM78.1403 7.96883H74.7215V5.39194H78.1403V7.96883ZM78.1403 20.5897H74.7215V9.202H78.1403V20.5897ZM91.7392 16.2608C91.0758 19.0418 88.6435 20.9724 85.7945 20.9724C82.3586 20.9724 79.6712 18.3104 79.6712 14.8746C79.6712 11.4387 82.2906 8.8193 85.7775 8.8193C88.669 8.8193 91.1269 10.8009 91.7222 13.5989H88.2863C87.8526 12.5953 86.9171 12 85.8285 12C84.2126 12 83.0985 13.2332 83.0985 14.9851C83.0985 16.601 84.2381 17.7832 85.786 17.7832C86.8831 17.7832 87.6315 17.3239 88.3118 16.2608H91.7477H91.7392ZM104.037 17.0347C102.991 19.4671 100.916 20.9724 98.5684 20.9724C95.1496 20.9724 92.5131 18.3274 92.5131 14.9171C92.5131 11.5068 95.1581 8.81079 98.4153 8.81079C101.673 8.81079 104.428 11.4982 104.428 15.0532C104.428 15.3934 104.403 15.5975 104.36 15.9632H95.8214C95.983 17.2389 96.9865 18.1063 98.3048 18.1063C99.1722 18.1063 99.674 17.8767 100.397 17.1963L100.558 17.0347H104.045H104.037ZM101.026 13.6839C100.797 12.5273 99.7505 11.7024 98.4749 11.7024C97.1056 11.7024 96.1786 12.4082 95.881 13.6839H101.026ZM120.57 16.601C119.158 19.2204 116.471 20.8618 113.605 20.8618C109.191 20.8618 105.636 17.3749 105.636 13.0716C105.636 8.76827 109.097 5.1283 113.63 5.1283C116.479 5.1283 119.549 6.99931 120.502 9.29555H118.818C117.653 7.56912 115.654 6.49754 113.537 6.49754C110.118 6.49754 107.158 9.52518 107.158 13.0291C107.158 16.533 110.16 19.4926 113.605 19.4926C115.629 19.4926 117.457 18.489 118.886 16.601H120.57ZM122.432 5.40044H123.87V20.5897H122.432V5.40044ZM137.647 15.0277C137.647 18.1488 134.934 20.8533 131.821 20.8533C128.709 20.8533 125.919 18.2084 125.919 15.0447C125.919 11.881 128.539 9.07443 131.821 9.07443C135.104 9.07443 137.647 11.7619 137.647 15.0192V15.0277ZM127.356 15.0277C127.356 17.5365 129.364 19.5606 131.821 19.5606C134.279 19.5606 136.218 17.511 136.218 14.9171C136.218 12.3232 134.211 10.3841 131.821 10.3841C129.432 10.3841 127.356 12.4593 127.356 15.0277ZM149.443 20.5897H148.074V18.8547C147.342 20.1985 146.092 20.8618 144.289 20.8618C141.304 20.8618 139.603 18.9228 139.603 15.5549V9.36359H141.04V15.5549C141.04 18.0553 142.333 19.5606 144.527 19.5606C146.721 19.5606 148.014 17.9703 148.014 15.5549V9.36359H149.451V20.5897H149.443ZM163.331 20.5897H161.962V18.5656C160.754 20.1559 159.385 20.8618 157.565 20.8618C154.146 20.8618 151.484 18.2679 151.484 14.9426C151.484 11.6173 154.172 9.09144 157.539 9.09144C159.249 9.09144 160.771 9.79732 161.885 11.1411V5.40044H163.322V20.5897H163.331ZM152.93 14.9171C152.93 17.443 154.979 19.5606 157.463 19.5606C159.946 19.5606 161.953 17.4855 161.953 14.9171C161.953 12.3487 159.921 10.3841 157.42 10.3841C154.92 10.3841 152.93 12.4593 152.93 14.9171Z" fill="#545454"></path>
+            <path d="M166.835 9.26155C165.712 9.26155 164.802 8.35156 164.802 7.22895C164.802 6.10634 165.712 5.19635 166.835 5.19635C167.958 5.19635 168.868 6.10634 168.868 7.22895C168.868 8.35156 167.958 9.26155 166.835 9.26155ZM166.835 5.62158C165.942 5.62158 165.219 6.34447 165.219 7.23746C165.219 8.13044 165.942 8.85333 166.835 8.85333C167.728 8.85333 168.451 8.13044 168.451 7.23746C168.451 6.34447 167.728 5.62158 166.835 5.62158Z" fill="#545454"></path>
+            <path d="M166.928 7.52659H166.546V8.38556H166.061V6.02979H166.937C167.218 6.02979 167.43 6.08932 167.583 6.21689C167.736 6.34446 167.813 6.51455 167.813 6.74417C167.813 6.90576 167.779 7.04183 167.711 7.14389C167.643 7.24594 167.532 7.33949 167.396 7.39903L167.906 8.36005V8.38556H167.388L166.945 7.52659H166.928ZM166.537 7.12688H166.928C167.048 7.12688 167.141 7.09286 167.209 7.03333C167.277 6.9738 167.311 6.88875 167.311 6.77819C167.311 6.66763 167.277 6.58258 167.218 6.51455C167.158 6.44651 167.056 6.421 166.928 6.421H166.537V7.12688Z" fill="#545454"></path>
+            <path d="M17.9957 12.7059L18.1743 12.8249C19.8497 11.3707 21.8909 10.095 24 9.21049V0H0V7.84975C1.20765 7.65415 2.44933 7.55209 3.6995 7.55209C9.07441 7.55209 14.1517 9.38058 17.9872 12.7059H17.9957Z" fill="#545454"></path>
+            <path d="M18.1573 18.3104L18.1403 18.3359C18.1403 18.3359 18.1573 18.3189 18.1573 18.3104C15.1127 14.3558 9.77177 11.7278 3.70799 11.7278C2.4323 11.7278 1.19913 11.8469 0.00848389 12.068V24H24V13.6499C21.6357 14.798 19.6286 16.4054 18.1573 18.3189V18.3104Z" fill="#545454"></path>
+            <path d="M18.1573 18.3104C18.1573 18.3104 18.1403 18.3274 18.1403 18.3359L18.1573 18.3104Z" fill="white"></path>
+        </svg>
+    </span>
+
+    <a class="inline-link" href="https://www.invoicecloud.net/privacy-policy" target="_blank">Privacy Policy</a>
+
+    <a class="inline-link" href="https://invoicecloud.net/accessibility-statement" target="_blank">Accessibility</a>
+
+    <a class="inline-link secureSite" href="https://sealserver.trustwave.com/cert.php?customerId=e6fe5831b6ba46ef83d7c7330126e94d" target="_blank">
+        <img class="trustwaveLogo" src="/portal/(S(kzoy5rw05wh15cvbrnw0xrla))/2/images/Trustwave3x.png" alt="This site protected by Trustwave's Trust Commerce Program. You may click on seal to validate.">
+        <span>Secure Site</span>
+    </a>
+
+    <div id="info" class="clsinfo" style="display: none;">
+        <!-- Machine: IC-WEB5
+SessionID: kzoy5rw05wh15cvbrnw0xrla
+ -->
+    </div>
+</div>
+
+
+
+        </div>
+
+        <script type="text/javascript">
+            $('#menuContact').popover({
+                trigger: 'manual',
+                html: true,
+                placement: 'bottom',
+                title: '',
+                content: '<div><div class="contact-us-phone-icon"><span aria-hidden="true" class="glyphicon glyphicon-earphone"></span></div><div class="contact-us-phone-number">(781) 314-3250</div><div class="contact-us-email-icon"><span aria-hidden="true" class="glyphicon glyphicon-envelope"></span></div><a href="mailto:momalley@city.waltham.ma.us"><div class="contact-us-email-address">Email Us</div></a></div>',
+                animation: false
+            })
+            .on("mouseenter", function () {
+                var _this = this;
+                $(this).popover("show");
+                $(".popover").on("mouseleave", function () {
+                    $(_this).popover('hide');
+                });
+            }).on("mouseleave", function () {
+                var _this = this;
+                setTimeout(function () {
+                    if (!$(".popover:hover").length) {
+                        $(_this).popover("hide");
+                    }
+                }, 300);
+            });
+      
+            // When popover is inserted into DOM set Popover Position
+            $('#menuContact').on('inserted.bs.popover', function (e) {
+                let $link = $(this)
+                let poId = $link.attr('aria-describedby');
+                let $po = $('#' + poId);
+
+                $po.find('.popover-content').attr('style', 'max-width:350px;min-width:145px;')
+            });
+        </script>
+
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">  
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">×</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div><div class="contact-us-phone-icon"><span aria-hidden="true" class="glyphicon glyphicon-earphone"></span></div><div class="contact-us-phone-number">(781) 314-3250</div><div class="contact-us-email-icon"><span aria-hidden="true" class="glyphicon glyphicon-envelope"></span></div><a href="mailto:momalley@city.waltham.ma.us"><div class="contact-us-email-address">Email Us</div></a></div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary ic-button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+</body></html>

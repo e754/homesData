@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+import undetected_chromedriver as uc
 import re
 import pandas as pd
 from selenium.common.exceptions import NoSuchElementException
@@ -14,6 +15,8 @@ import random
 import numpy as np
 
 # Set up the WebDriver
+
+
 def is_element_present(driver, by, value):
     try:
         driver.find_element(by, value)
@@ -26,9 +29,9 @@ def getBill(address):
         parts = address.split()
         number = int(parts[0])
         name = parts[1]    
-        page_to_scrape = webdriver.Chrome()  # Update path if necessary
         #access the webpage
         page_to_scrape.get("https://unipaygold.unibank.com/transactioninfo.aspx?TID=3154")
+
         time.sleep(random.uniform(0.5, 1.5) * base_wait_time)
 
         # Locate and click the close button on the modal
@@ -87,11 +90,25 @@ def getBill(address):
             print(name, number, "can't find address in database")
     except:
 
-        df.to_csv("waterBill.csv")
+        df.to_csv("arlingtonwaterBill.csv")
 
-df = pd.read_csv('waterBill.csv')
 
-for i in range(320,df.shape[0]):
+
+options = uc.ChromeOptions()
+# options.add_arxgument("--headless")  # Enable headless mode
+options.add_argument("--disable-gpu")  # Optional, for better compatibility
+options.add_argument("--disable-blink-features=AutomationControlled")  # Evade detection
+options.add_argument("user-agent=" + random.choice([
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.63 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.198 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.165 Safari/537.36"
+    ]))
+options.add_argument("--disable-use_subprocess")
+page_to_scrape = uc.Chrome(options=options)
+
+df = pd.read_csv('arlingtonwaterBill.csv')
+
+for i in range(326,df.shape[0]):
     if pd.isna(df.at[i, 'bill']):
         print(i)
         address=df.iloc[i]['Location']
@@ -99,7 +116,7 @@ for i in range(320,df.shape[0]):
         print(cost)
         df.at[i,'bill']=cost
         if i%20==0:
-            df.to_csv("waterBill.csv")
+            df.to_csv("arlingtonwaterBill.csv")
             print("downloaded")
 
 

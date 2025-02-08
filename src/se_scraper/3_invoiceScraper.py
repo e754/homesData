@@ -23,8 +23,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import PyPDF2
-import fitz
-import pdfplumber
 
 
 
@@ -52,7 +50,7 @@ time.sleep(random.uniform(1, 1) * base_wait_time)
 # csv_path = os.path.join(script_dir, '..', 'data', 'PatriotArlington.csv')
 data = pd.read_csv('waterUsage.csv')
 
-for i in range (2300,3300):
+for i in range (17000,20000):
     print(i)
     address=data.iloc[i]['Location']
     if i%10==0:
